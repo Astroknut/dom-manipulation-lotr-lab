@@ -119,8 +119,10 @@ makeBuddies();
 function beautifulStranger() {
 var rivendell = document.getElementsByTagName("article")[1];
 var goodbye = rivendell.lastChild;
-goodbye[3] = "Aragon";
-console.log(goodbye);
+var li = goodbye.lastChild;
+var items = li.childNodes;
+items[3].innerText = "Aragorn";
+console.log(items);
 //WHY DID THIS NOT WORK???
 
 
