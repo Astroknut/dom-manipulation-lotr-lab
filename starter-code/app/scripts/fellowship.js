@@ -123,7 +123,6 @@ var li = goodbye.lastChild;
 var items = li.childNodes;
 items[3].innerText = "Aragorn";
 console.log(items);
-//WHY DID THIS NOT WORK???
 
 
   // change the 'Strider' textnode to 'Aragorn'
@@ -134,9 +133,17 @@ beautifulStranger();
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
+var shire = document.getElementsByTagName("article")[0];
+console.log(shire);
+var hobbits = document.querySelector('ul');
+console.log(hobbits);
+var rivendell = document.getElementsByTagName('article')[1];
+console.log(rivendell);
+rivendell.append(hobbits);
+
 }
 
-
+leaveTheShire();
 // Part 7
 
 
